@@ -41,22 +41,31 @@ class _HomeState extends State<Home> {
             children: <Widget>[
               Column(
                 children: [
-                  TextField(
-                    decoration: InputDecoration(
-                        hintText: "অ্যাকাউন্টের নাম লিখুন",
-                        label: Icon(Icons.person,size: 20,)
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: TextField(
+                      decoration: InputDecoration(
+                          hintText: "অ্যাকাউন্টের নাম লিখুন",
+                          label: Icon(Icons.person,size: 20,)
+                      ),
                     ),
                   ),
-                  TextField(
-                    decoration: InputDecoration(
-                        hintText: "মোবাইল নাম্বার লিখুন",
-                        label: Icon(Icons.mobile_friendly_outlined,size: 20,)
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: TextField(
+                      decoration: InputDecoration(
+                          hintText: "মোবাইল নাম্বার লিখুন",
+                          label: Icon(Icons.mobile_friendly_outlined,size: 20,)
+                      ),
                     ),
                   ),
-                  TextField(
-                    decoration: InputDecoration(
-                        hintText: "অ্যাকাউন্টের পাসওযার্ড লিখুন",
-                        label: Icon(Icons.password_rounded,size: 20,)
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: TextField(
+                      decoration: InputDecoration(
+                          hintText: "অ্যাকাউন্টের পাসওযার্ড লিখুন",
+                          label: Icon(Icons.password_rounded,size: 20,)
+                      ),
                     ),
                   ),
                 ],

@@ -25,7 +25,7 @@ class MyApps extends StatelessWidget {
         ],
         leading: IconButton(icon: Icon(Icons.search,color: Colors.black,),onPressed : (){}),
       ),
-      backgroundColor: Colors.black87,
+      backgroundColor: Colors.yellow,
       body: Padding(
         padding: const EdgeInsets.all(10.0),
         child: GridView.count(
