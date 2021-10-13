@@ -1,5 +1,10 @@
+
+
 import 'package:flutter/material.dart';
+import 'package:untitled1/call.dart';
 import 'package:untitled1/homeee.dart';
+import 'package:untitled1/liquitswip.dart';
+import 'package:untitled1/music.dart';
 
 class MyApps extends StatelessWidget {
   const MyApps({Key? key}) : super(key: key);
@@ -43,7 +48,12 @@ class MyApps extends StatelessWidget {
 
             ),
             Card(
-              child: IconButton(icon: Icon(Icons.local_grocery_store_rounded,size: 50,),onPressed: (){},),
+              child: IconButton(icon: Icon(Icons.liquor_outlined,size: 50,
+              ),onPressed: (){
+                Navigator.push(context, MaterialPageRoute(
+                    builder: (context)=>LiquidSwipee()));
+              },
+              ),
               elevation: 10,
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.all(Radius.circular(20.0))
@@ -115,7 +125,9 @@ class MyApps extends StatelessWidget {
 
             ),
             Card(
-              child: IconButton(icon: Icon(Icons.call,size: 50,),onPressed: (){},),
+              child: IconButton(icon: Icon(Icons.call,size: 50,),onPressed: (){
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (context)=>MyApp()));},),
               elevation: 10,
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.all(Radius.circular(20.0))
@@ -133,7 +145,10 @@ class MyApps extends StatelessWidget {
 
             ),
             Card(
-              child: IconButton(icon: Icon(Icons.music_note,size: 50,),onPressed: (){},),
+              child: IconButton(icon: Icon(Icons.music_note,size: 50,),onPressed: (){
+                Navigator.push(context, MaterialPageRoute(
+                    builder: (context)=>Musicplayer()));
+              },),
               elevation: 10,
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.all(Radius.circular(20.0))
