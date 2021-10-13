@@ -16,18 +16,22 @@ class _splashscreenState extends State<splashscreen> {
     super.initState();
 
 
-    Timer(Duration(seconds: 5),()=>
-      Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (context)=>Home()), (route) => false), );
+    Timer(Duration(seconds: 3),()=>
+      Navigator.pushAndRemoveUntil(context,
+          MaterialPageRoute(
+              builder: (context)=>Home()), (route) => false), );
   }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.lightBlueAccent,
+      backgroundColor: Colors.black,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text("This is Splash Screen"),
+          children: <Widget>[
+            Center(child: Icon(Icons.android,color: Colors.yellow,size: 50,)),
+            Center(child: Text("\n\n        আমার প্রথম\nমোবাইল অ্যাপ্লিকেশনে\n            স্বাগতম\n\n",style: TextStyle(color: Colors.yellow,fontSize: 30),)),
+            Icon(Icons.miscellaneous_services,color: Colors.yellow,size: 50,)
           ],
         ),
       ),
