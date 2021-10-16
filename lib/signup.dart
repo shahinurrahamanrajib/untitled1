@@ -47,8 +47,12 @@ class Signup extends StatelessWidget {
                       child: TextField(
                         decoration: InputDecoration(
                             hintText: "নাম লিখুন",
-                            label: Icon(Icons.person,size: 20,)
+                            label: Icon(Icons.person,size: 20,),
+                            border: OutlineInputBorder(),
+                          filled: true,
                         ),
+                        maxLength: 50,
+
                       ),
                     ),
                     Padding(
@@ -56,8 +60,12 @@ class Signup extends StatelessWidget {
                       child: TextField(
                         decoration: InputDecoration(
                             hintText: "মোবাইল নাম্বার লিখুন",
-                            label: Icon(Icons.mobile_friendly_outlined,size: 20,)
+                            label: Icon(Icons.mobile_friendly_outlined,size: 20,),
+                            border: OutlineInputBorder(),
+                        filled: true,
                         ),
+                        maxLength: 14,
+                        keyboardType: TextInputType.number,
                       ),
                     ),
                     Padding(
@@ -65,7 +73,9 @@ class Signup extends StatelessWidget {
                       child: TextField(
                         decoration: InputDecoration(
                             hintText: "ই-মেইল আইডি লিখুন",
-                            label: Icon(Icons.email_outlined,size: 20,)
+                            label: Icon(Icons.email_outlined,size: 20,),
+                          border: OutlineInputBorder(),
+                          filled: true,
                         ),
                       ),
                     ),
@@ -74,8 +84,13 @@ class Signup extends StatelessWidget {
                       child: TextField(
                         decoration: InputDecoration(
                             hintText: "নতুন পাসওযার্ড লিখুন",
-                            label: Icon(Icons.password_rounded,size: 20,)
+                            label: Icon(Icons.password_rounded,size: 20,),
+                          border: OutlineInputBorder(),
+                          filled: true,
                         ),
+                        maxLength: 15,
+                        //   keyboardType: TextInputType.number,
+                        obscureText: true,
                       ),
                     ),
                     Padding(
@@ -83,8 +98,14 @@ class Signup extends StatelessWidget {
                       child: TextField(
                         decoration: InputDecoration(
                             hintText: "পাসওযার্ড আবার লিখুন",
-                            label: Icon(Icons.password_rounded,size: 20,)
+                            label: Icon(Icons.password_rounded,size: 20,),
+                          border: OutlineInputBorder(),
+                          filled: true,
+
                         ),
+                        maxLength: 15,
+                    //   keyboardType: TextInputType.number,
+                        obscureText: true,
                       ),
                     ),
 

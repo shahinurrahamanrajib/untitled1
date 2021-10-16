@@ -15,12 +15,13 @@ class _splashscreenState extends State<splashscreen> {
     // TODO: implement initState
     super.initState();
 
-
-    Timer(Duration(seconds: 3),()=>
-      Navigator.pushAndRemoveUntil(context,
-          MaterialPageRoute(
-              builder: (context)=>Home()), (route) => false), );
+    Timer(
+      Duration(seconds: 8),
+      () => Navigator.pushAndRemoveUntil(context,
+          MaterialPageRoute(builder: (context) => Home()), (route) => false),
+    );
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,9 +30,27 @@ class _splashscreenState extends State<splashscreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Center(child: Icon(Icons.android,color: Colors.yellow,size: 50,)),
-            Center(child: Text("\n\n        আমার প্রথম\nমোবাইল অ্যাপ্লিকেশনে\n            স্বাগতম\n\n",style: TextStyle(color: Colors.yellow,fontSize: 30),)),
-            Icon(Icons.miscellaneous_services,color: Colors.yellow,size: 50,)
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Image(
+                  image: NetworkImage(
+                      'https://avatars.githubusercontent.com/u/92436730?s=400&u=d1dd15e87de30c39dc74abfa026bb959c65598d6&v=4')),
+            ),
+            Center(
+                child: Icon(
+              Icons.android,
+              color: Colors.green,
+              size: 50,
+            )),
+            Center(
+                child: Text(
+              "        আমার প্রথম\nমোবাইল অ্যাপ্লিকেশনে\n            স্বাগতম",
+              style: TextStyle(color: Colors.yellow, fontSize: 30),
+            )),            // Icon(Icons.miscellaneous_services,color: Colors.yellow,size: 50,),
+            CircularProgressIndicator(
+              backgroundColor: Colors.green,
+              color: Colors.yellow,
+            ),
           ],
         ),
       ),

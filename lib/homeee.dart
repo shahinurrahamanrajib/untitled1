@@ -46,8 +46,11 @@ class _HomeState extends State<Home> {
                     child: TextField(
                       decoration: InputDecoration(
                           hintText: "অ্যাকাউন্টের নাম লিখুন",
-                          label: Icon(Icons.person,size: 20,)
+                          label: Icon(Icons.person,size: 20,),
+                        border: OutlineInputBorder(),
+                        filled: true,
                       ),
+                      maxLength: 50,
                     ),
                   ),
                   Padding(
@@ -55,8 +58,14 @@ class _HomeState extends State<Home> {
                     child: TextField(
                       decoration: InputDecoration(
                           hintText: "মোবাইল নাম্বার লিখুন",
-                          label: Icon(Icons.mobile_friendly_outlined,size: 20,)
+                          label: Icon(Icons.mobile_friendly_outlined,size: 20,),
+                        border: OutlineInputBorder(),
+                        filled: true,
                       ),
+                      maxLength: 14,
+                      keyboardType: TextInputType.number,
+                      //   keyboardType: TextInputType.number,
+                     // obscureText: true,
                     ),
                   ),
                   Padding(
@@ -64,8 +73,13 @@ class _HomeState extends State<Home> {
                     child: TextField(
                       decoration: InputDecoration(
                           hintText: "অ্যাকাউন্টের পাসওযার্ড লিখুন",
-                          label: Icon(Icons.password_rounded,size: 20,)
+                          label: Icon(Icons.password_rounded,size: 20,),
+                        border: OutlineInputBorder(),
+                        filled: true,
                       ),
+                      maxLength: 15,
+                      //   keyboardType: TextInputType.number,
+                      obscureText: true,
                     ),
                   ),
                 ],

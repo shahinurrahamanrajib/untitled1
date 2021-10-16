@@ -62,7 +62,7 @@ class MyApp extends StatelessWidget {
 
               ),
               ListTile(
-                title: Text("Azin Mama"),
+                title: Text("Azim Mama"),
                 subtitle: Text("01872108085\nRobi"),
                 leading: Icon(Icons.account_circle,size: 50,),
                 trailing: Icon(Icons.call_outlined,size: 25),
