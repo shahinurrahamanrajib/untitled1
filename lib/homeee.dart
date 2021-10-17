@@ -10,9 +10,11 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  bool _secureText= true;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+     // backgroundColor: Colors.black,
       appBar: AppBar(
 
           title: Center(
@@ -46,7 +48,8 @@ class _HomeState extends State<Home> {
                     child: TextField(
                       decoration: InputDecoration(
                           hintText: "অ্যাকাউন্টের নাম লিখুন",
-                          label: Icon(Icons.person,size: 20,),
+                        icon: Icon(Icons.person),
+                          label: Text("অ্যাকাউন্টের নাম"),
                         border: OutlineInputBorder(),
                         filled: true,
                       ),
@@ -58,7 +61,8 @@ class _HomeState extends State<Home> {
                     child: TextField(
                       decoration: InputDecoration(
                           hintText: "মোবাইল নাম্বার লিখুন",
-                          label: Icon(Icons.mobile_friendly_outlined,size: 20,),
+                          icon: Icon(Icons.mobile_friendly_outlined),
+                          label: Text("মোবাইল নাম্বার"),
                         border: OutlineInputBorder(),
                         filled: true,
                       ),
@@ -73,8 +77,15 @@ class _HomeState extends State<Home> {
                     child: TextField(
                       decoration: InputDecoration(
                           hintText: "অ্যাকাউন্টের পাসওযার্ড লিখুন",
-                          label: Icon(Icons.password_rounded,size: 20,),
+                          icon: Icon(Icons.password_rounded),
+                          label: Text("অ্যাকাউন্টের পাসওযার্ড"),
                         border: OutlineInputBorder(),
+                        suffixIcon: IconButton(
+                            icon: Icon(
+                              Icons.remove_red_eye_sharp),
+                        onPressed: (){
+                              _secureText = !_secureText;
+                        },),
                         filled: true,
                       ),
                       maxLength: 15,
@@ -84,28 +95,25 @@ class _HomeState extends State<Home> {
                   ),
                 ],
               ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Row(
-                  children: [
-                    SizedBox(width: 60,),
-                    ElevatedButton(
-                        onPressed: (){
-                      Navigator.push(context,
-                      MaterialPageRoute(builder: (contex)=>Signup()));
-                    },
-                      child: Text("সাইন আপ",style: TextStyle(color: Colors.yellow),)
-                    ),
-                    SizedBox(width: 10,),
-                    ElevatedButton(
-                        onPressed: (){
-                          Navigator.push(context,
-                              MaterialPageRoute(builder: (contex)=>MyApps()));
-                        },
-                        child: Text("লগ ইন",style: TextStyle(color: Colors.yellow))
-                    ),
-                  ],
-                ),
+              Row(
+                children: [
+                  SizedBox(width: 100,),
+                  ElevatedButton(
+                      onPressed: (){
+                    Navigator.push(context,
+                    MaterialPageRoute(builder: (contex)=>Signup()));
+                  },
+                    child: Text("সাইন আপ",style: TextStyle(color: Colors.yellow),)
+                  ),
+                  SizedBox(width: 10,),
+                  ElevatedButton(
+                      onPressed: (){
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (contex)=>MyApps()));
+                      },
+                      child: Text("লগ ইন",style: TextStyle(color: Colors.yellow))
+                  ),
+                ],
               )
             ],
           ),
