@@ -6,9 +6,27 @@ class CallScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.yellow,
       body: Stack(
         children: <Widget>[
+          Container(
+            height: 600,
+            // width: 1000,
+            color: Colors.blue,
+            child: Center(child: Text("I'm on vacation every singel day",
+              style: TextStyle(color: Colors.white,fontSize: 20),
+            )),
 
+          ),
+          Positioned(
+            bottom: -50,
+            right: 0,
+            left: 10,
+            child: CircleAvatar(
+              radius: 60,
+              backgroundColor: Colors.white,
+            ),
+          ),
         ],
       )
 

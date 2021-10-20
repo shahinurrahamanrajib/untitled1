@@ -3,9 +3,16 @@ import 'package:untitled1/Splashhh.dart';
 import 'package:untitled1/allapp.dart';
 import 'package:untitled1/homeee.dart';
 
-class Signup extends StatelessWidget {
+class Signup extends StatefulWidget {
   const Signup({Key? key}) : super(key: key);
 
+  @override
+  State<Signup> createState() => _SignupState();
+}
+
+class _SignupState extends State<Signup> {
+  bool _secureText = true;
+  bool _secureText1 = true;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -47,7 +54,8 @@ class Signup extends StatelessWidget {
                       child: TextField(
                         decoration: InputDecoration(
                             hintText: "নাম লিখুন",
-                            label: Icon(Icons.person,size: 20,),
+                            label: Text("নাম লিখুন"),
+                            icon: Icon(Icons.person),
                             border: OutlineInputBorder(),
                           filled: true,
                         ),
@@ -60,7 +68,8 @@ class Signup extends StatelessWidget {
                       child: TextField(
                         decoration: InputDecoration(
                             hintText: "মোবাইল নাম্বার লিখুন",
-                            label: Icon(Icons.mobile_friendly_outlined,size: 20,),
+                            label: Text('মোবাইল নাম্বার'),
+                            icon: Icon(Icons.mobile_friendly_outlined,size: 20,),
                             border: OutlineInputBorder(),
                         filled: true,
                         ),
@@ -73,7 +82,8 @@ class Signup extends StatelessWidget {
                       child: TextField(
                         decoration: InputDecoration(
                             hintText: "ই-মেইল আইডি লিখুন",
-                            label: Icon(Icons.email_outlined,size: 20,),
+                            label: Text('ই-মেইল আইডি'),
+                          icon: Icon(Icons.email_outlined,size: 20,),
                           border: OutlineInputBorder(),
                           filled: true,
                         ),
@@ -84,13 +94,24 @@ class Signup extends StatelessWidget {
                       child: TextField(
                         decoration: InputDecoration(
                             hintText: "নতুন পাসওযার্ড লিখুন",
-                            label: Icon(Icons.password_rounded,size: 20,),
+                            label: Text("নতুন পাসওযার্ড"),
+                          icon: Icon(Icons.password_rounded,size: 20,),
                           border: OutlineInputBorder(),
-                          filled: true,
+                          suffixIcon: IconButton(
+                            icon: Icon(_secureText?
+                            Icons.remove_red_eye_sharp:
+                            Icons.remove_red_eye_outlined
+                            ),
+                            onPressed: (){
+                              setState(() {
+                                _secureText = !_secureText;
+                              });
+                            },),
+                         // filled: true,
                         ),
                         maxLength: 15,
                         //   keyboardType: TextInputType.number,
-                        obscureText: true,
+                        obscureText: _secureText,
                       ),
                     ),
                     Padding(
@@ -98,14 +119,25 @@ class Signup extends StatelessWidget {
                       child: TextField(
                         decoration: InputDecoration(
                             hintText: "পাসওযার্ড আবার লিখুন",
-                            label: Icon(Icons.password_rounded,size: 20,),
+                            label: Text('পাসওযার্ড আবার'),
+                          icon: Icon(Icons.password_rounded,size: 20,),
                           border: OutlineInputBorder(),
-                          filled: true,
+                          suffixIcon: IconButton(
+                            icon: Icon(_secureText1?
+                            Icons.remove_red_eye_sharp:
+                            Icons.remove_red_eye_outlined
+                            ),
+                            onPressed: (){
+                              setState(() {
+                                _secureText1 = !_secureText1;
+                              });
+                            },),
+                        //  filled: true,
 
                         ),
                         maxLength: 15,
                     //   keyboardType: TextInputType.number,
-                        obscureText: true,
+                        obscureText: _secureText1,
                       ),
                     ),
 
@@ -115,7 +147,7 @@ class Signup extends StatelessWidget {
                   padding: const EdgeInsets.all(8.0),
                   child: Row(
                     children: [
-                      SizedBox(width: 60,),
+                      SizedBox(width: 40,),
                       ElevatedButton(
                           onPressed: (){
                             Navigator.push(context,
@@ -123,6 +155,14 @@ class Signup extends StatelessWidget {
                                     builder: (contex)=>Home()));
                           },
                           child: Text("সংরক্ষন করুন",style: TextStyle(color: Colors.yellow))
+                      ),
+                      SizedBox(width: 10,),
+                      ElevatedButton(
+                          onPressed: (){
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (contex)=>Signup()));
+                          },
+                          child: Text("রিফ্রেশ",style: TextStyle(color: Colors.yellow))
                       ),
                       SizedBox(width: 10,),
                       ElevatedButton(

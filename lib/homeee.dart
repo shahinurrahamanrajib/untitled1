@@ -81,16 +81,19 @@ class _HomeState extends State<Home> {
                           label: Text("অ্যাকাউন্টের পাসওযার্ড"),
                         border: OutlineInputBorder(),
                         suffixIcon: IconButton(
-                            icon: Icon(
-                              Icons.remove_red_eye_sharp),
+                            icon: Icon(_secureText?
+                              Icons.remove_red_eye_sharp:
+                                Icons.remove_red_eye_outlined
+                            ),
                         onPressed: (){
-                              _secureText = !_secureText;
+                              setState(() {
+                                _secureText = !_secureText;
+                              });
                         },),
-                        filled: true,
                       ),
                       maxLength: 15,
                       //   keyboardType: TextInputType.number,
-                      obscureText: true,
+                      obscureText: _secureText,
                     ),
                   ),
                 ],
