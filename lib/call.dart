@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:untitled1/allapp.dart';
+import 'package:untitled1/callscreen.dart';
 
 import 'package:untitled1/homeee.dart';
 
@@ -18,7 +19,9 @@ class MyApp extends StatelessWidget {
             } ),
             actions: <Widget>[
               IconButton(icon: Icon(Icons.mic_none_rounded),onPressed :(){} ),
-              IconButton(icon: Icon(Icons.add_ic_call_outlined),onPressed :(){} ),
+              IconButton(icon: Icon(Icons.add_ic_call_outlined),onPressed :(){
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>CallScreen()));
+              } ),
             ],
             title: Center(
               child: Text("Search contact & places",style: TextStyle(
@@ -27,6 +30,7 @@ class MyApp extends StatelessWidget {
             ),
           ),
           body: ListView(
+
             children: const <Widget>[
               ListTile(
                 title: Text("F Cc Arafat ",),
