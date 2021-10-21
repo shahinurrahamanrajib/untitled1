@@ -39,8 +39,8 @@ class CallScreen extends StatelessWidget {
             child: Container(
               height: 150,
               // width: 1000,
-              color: Colors.transparent,
-              child: Center(child: Text("Shahinur Rahaman",
+              color: Colors.green,
+              child: Center(child: Text("Shahinur Rahaman\n\n+8801720883327",
                 style: TextStyle(color: Colors.white,fontSize: 30),
               )),
             ),
