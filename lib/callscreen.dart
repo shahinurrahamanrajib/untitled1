@@ -8,25 +8,24 @@ class CallScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.yellow,
       body: Stack(
+        alignment: Alignment.bottomCenter,
+        clipBehavior: Clip.none,
         children: <Widget>[
           Container(
-            height: 600,
+            height: 400,
             // width: 1000,
             color: Colors.blue,
-            child: Center(child: Text("I'm on vacation every singel day",
-              style: TextStyle(color: Colors.white,fontSize: 20),
-            )),
-
           ),
           Positioned(
             bottom: -50,
-            right: 0,
-
+            right: 50,
+            left: 50,
             child: CircleAvatar(
               radius: 60,
               backgroundColor: Colors.white,
             ),
           ),
+
 
         ],
       )
