@@ -40,31 +40,35 @@ class CallScreen extends StatelessWidget {
               height: 150,
               // width: 1000,
               color: Colors.transparent,
-              child: Center(child: Text("Shahinur Rahaman\n\n+8801720883327",
-                style: TextStyle(color: Colors.white,fontSize: 30),
-              )),
+              child: ListView(
+                children: <Widget>[
+                  ListTile(
+                    title: Center(child: Text('Shahinur Rahaman',style: TextStyle(color: Colors.white,fontSize: 25),)),
+                    subtitle: Center(child: Text('+8801872108085',style: TextStyle(color: Colors.white60,fontSize: 20),)),
+                  )
+                ],
+              )
             ),
           ),
           Positioned(
 
             top: MediaQuery.of(context).size.height/1.28,
-            left: 20,
+            left: 30,
             child: CircleAvatar(
               child: Icon(Icons.call_end_rounded,color: Colors.white,size: 45,),
-              radius: 45,
+              radius: 35,
               backgroundColor: Colors.red,
             ),
           ),
           Positioned(
             top: MediaQuery.of(context).size.height/1.28,
-            right: 20,
+            right: 30,
             child: CircleAvatar(
               child: Icon(Icons.call_rounded,color: Colors.white,size: 45,),
-              radius: 45,
+              radius: 35,
               backgroundColor: Colors.green,
             ),
           ),
-
 
 
         ],

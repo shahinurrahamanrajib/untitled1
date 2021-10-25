@@ -5,11 +5,9 @@ import 'package:untitled1/homeee.dart';
 
 class Signup extends StatefulWidget {
   const Signup({Key? key}) : super(key: key);
-
   @override
   State<Signup> createState() => _SignupState();
 }
-
 class _SignupState extends State<Signup> {
   bool _secureText = true;
   bool _secureText1 = true;
@@ -179,7 +177,6 @@ class _SignupState extends State<Signup> {
             ),
           ),
         )
-
     );
   }
 }
