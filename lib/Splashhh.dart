@@ -32,9 +32,8 @@ class _splashscreenState extends State<splashscreen> {
           children: <Widget>[
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Image(
-                  image: NetworkImage(
-                      'https://avatars.githubusercontent.com/u/92436730?s=400&u=d1dd15e87de30c39dc74abfa026bb959c65598d6&v=4')),
+              child: Image.asset('assets/DSC_0013.JPG',),
+
             ),
             Center(
                 child: Icon(

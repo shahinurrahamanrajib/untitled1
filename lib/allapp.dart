@@ -2,6 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:untitled1/Call/call.dart';
+import 'package:untitled1/HW21/MiniPage.dart';
+import 'package:untitled1/HW21/MiniPage2.dart';
 import 'package:untitled1/homeee.dart';
 import 'package:untitled1/liquitswip.dart';
 import 'package:untitled1/music.dart';
@@ -39,7 +41,10 @@ class MyApps extends StatelessWidget {
           crossAxisCount: 4,
           children: <Widget>[
             Card(
-              child: IconButton(icon: Icon(Icons.facebook_sharp,size: 50,),onPressed: (){},),
+              child: IconButton(icon: Icon(Icons.facebook_sharp,size: 50,),onPressed: (){
+                Navigator.push(context, MaterialPageRoute(
+                    builder: (context)=>MiniPage2()));
+              },),
               elevation: 10,
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.all(Radius.circular(20.0))
@@ -89,7 +94,9 @@ class MyApps extends StatelessWidget {
 
             ),
             Card(
-              child: IconButton(icon: Icon(Icons.alarm,size: 50,),onPressed: (){},),
+              child: IconButton(icon: Icon(Icons.remove,size: 50,),onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>MiniPage()));
+              },),
               elevation: 10,
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.all(Radius.circular(20.0))
