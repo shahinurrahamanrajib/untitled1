@@ -30,17 +30,54 @@ class _SignupState extends State<Signup> {
                   onPressed: () {Navigator.push(context, MaterialPageRoute(
                       builder: (context)=>Home()));})
             ],
-            leading: IconButton(
-              icon: Icon(
-                Icons.home_outlined,
+           ),
+        drawer: Drawer(
+          child: ListView(
+            children: <Widget>[
+              UserAccountsDrawerHeader(
+                accountName: Text("শহিীনুর রহমান রাজীব"),
+                accountEmail: Text("০১৮৭২১০৮০৮৫"),
               ),
-              onPressed: (){
-                Navigator.push(context, MaterialPageRoute(
-                    builder: (context)=>Home()));
-
-              },
-              color: Colors.yellow,
-            )),
+              ListTile(
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => MyApps()));
+                },
+                leading: Icon(Icons.home),
+                title: Text("হোম"),
+              ),
+              Divider(),
+              ListTile(
+                onTap: () {
+                  Navigator.push(
+                      context, MaterialPageRoute(builder: (context) => Home()));
+                },
+                leading: Icon(Icons.login),
+                title: Text("লগইন"),
+              ),
+              Divider(),
+              ListTile(
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Signup()));
+                },
+                leading: Icon(Icons.add_box),
+                title: Text("সাইন আপ"),
+              ),
+              Divider(),
+              ListTile(
+                leading: Icon(Icons.logout),
+                title: Text("লগঅউট"),
+              ),
+              Divider(),
+              ListTile(
+                leading: Icon(Icons.verified_user),
+                title: Text("সম্পর্কে"),
+              ),
+              Divider(),
+            ],
+          ),
+        ),
         body:SingleChildScrollView(
           child: Center(
             child: Column(
