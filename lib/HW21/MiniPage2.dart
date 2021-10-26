@@ -115,11 +115,14 @@ class _MiniPage2State extends State<MiniPage2> {
                   SizedBox(
                     width: 10,
                   ),
-
-
                 ],
               ),
-              SizedBox(height: 10,),
+              SizedBox(height: 10
+                )
+    ]
+    )
+    )
+      )
     );
   }
 }
