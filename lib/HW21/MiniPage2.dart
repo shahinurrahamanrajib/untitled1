@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:untitled1/allapp.dart';
+import 'package:untitled1/homeee.dart';
+import 'package:untitled1/signup.dart';
 
 class MiniPage2 extends StatefulWidget {
   const MiniPage2({Key? key}) : super(key: key);
@@ -12,6 +15,71 @@ class _MiniPage2State extends State<MiniPage2> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+          appBar: AppBar(
+            title: Center(
+                child: Text(
+                  "facebook",
+                  style: TextStyle(color: Colors.yellow, fontSize: 15),
+                )),
+            actions: <Widget>[
+              IconButton(
+                  icon: Icon(
+                    Icons.add,
+                    color: Colors.yellow,
+                  ),
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Signup()));
+                  })
+            ],
+          ),
+          drawer: Drawer(
+            child: ListView(
+              children: <Widget>[
+                UserAccountsDrawerHeader(
+                  accountName: Text("শহিীনুর রহমান রাজীব"),
+                  accountEmail: Text("০১৮৭২১০৮০৮৫"),
+                ),
+                ListTile(
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => MyApps()));
+                  },
+                  leading: Icon(Icons.home),
+                  title: Text("হোম"),
+                ),
+                Divider(),
+                ListTile(
+                  onTap: () {
+                    Navigator.push(
+                        context, MaterialPageRoute(builder: (context) => Home()));
+                  },
+                  leading: Icon(Icons.login),
+                  title: Text("লগইন"),
+                ),
+                Divider(),
+                ListTile(
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Signup()));
+                  },
+                  leading: Icon(Icons.add_box),
+                  title: Text("সাইন আপ"),
+                ),
+                Divider(),
+                ListTile(
+                  leading: Icon(Icons.logout),
+                  title: Text("লগঅউট"),
+                ),
+                Divider(),
+                ListTile(
+                  leading: Icon(Icons.verified_user),
+                  title: Text("সম্পর্কে"),
+                ),
+                Divider(),
+              ],
+            ),
+          ),
         body: SingleChildScrollView(
           child: Padding(
             padding: const EdgeInsets.all(8.0),
