@@ -13,114 +13,1179 @@ class _MiniPage2State extends State<MiniPage2> {
     return SafeArea(
       child: Scaffold(
         body: SingleChildScrollView(
-          child: Column(
-            children: <Widget>[
-              Row(
-                children: <Widget>[
-                  Container(
-                    width: 100,
-                    height: 100,
-                    color: Colors.yellow ,
-                    child: Column(
-                      children: <Widget>[
-                        Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
-                        Center(child: Text("  W..C")),
-                      ],
-                    ),
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Column(
+              children: <Widget>[
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    children: <Widget>[
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                    ],
                   ),
-                  SizedBox(
-                    width: 10,
+                ),
+                SizedBox(height: 10),
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    children: <Widget>[
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                    ],
                   ),
-                  Container(
-                    width: 100,
-                    height: 100,
-                    color: Colors.yellow ,
-                    child: Column(
-                      children: <Widget>[
-                        Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
-                        Center(child: Text("  W..C")),
-                      ],
-                    ),
+                ),
+                SizedBox(height: 10),
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    children: <Widget>[
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                    ],
                   ),
-                  SizedBox(
-                    width: 10,
+                ),
+                SizedBox(height: 10),
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    children: <Widget>[
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                    ],
                   ),
-                  Container(
-                    width: 100,
-                    height: 100,
-                    color: Colors.yellow ,
-                    child: Column(
-                      children: <Widget>[
-                        Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
-                        Center(child: Text("  W..C")),
-                      ],
-                    ),
+                ),
+                SizedBox(height: 10),
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    children: <Widget>[
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                    ],
                   ),
-                  SizedBox(
-                    width: 10,
+                ),
+                SizedBox(height: 10),
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    children: <Widget>[
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                    ],
                   ),
-                  Container(
-                    width: 100,
-                    height: 100,
-                    color: Colors.yellow ,
-                    child: Column(
-                      children: <Widget>[
-                        Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
-                        Center(child: Text("  W..C")),
-                      ],
-                    ),
+                ),
+                SizedBox(height: 10),
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    children: <Widget>[
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                    ],
                   ),
-                  SizedBox(
-                    width: 10,
+                ),
+                SizedBox(height: 10),
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    children: <Widget>[
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                    ],
                   ),
-                  Container(
-                    width: 100,
-                    height: 100,
-                    color: Colors.yellow ,
-                    child: Column(
-                      children: <Widget>[
-                        Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
-                        Center(child: Text("  W..C")),
-                      ],
-                    ),
+                ),
+                SizedBox(height: 10),
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    children: <Widget>[
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                    ],
                   ),
-                  SizedBox(
-                    width: 10,
+                ),
+                SizedBox(height: 10),
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    children: <Widget>[
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                    ],
                   ),
-                  Container(
-                    width: 100,
-                    height: 100,
-                    color: Colors.yellow ,
-                    child: Column(
-                      children: <Widget>[
-                        Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
-                        Center(child: Text("  W..C")),
-                      ],
-                    ),
+                ),
+                SizedBox(height: 10),
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    children: <Widget>[
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.yellow ,
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
+                            Center(child: Text("  W..C")),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                    ],
                   ),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Container(
-                    width: 100,
-                    height: 100,
-                    color: Colors.yellow ,
-                    child: Column(
-                      children: <Widget>[
-                        Center(child: IconButton(icon: Icon(Icons.person,size: 40,),onPressed: (){},)),
-                        Center(child: Text("  W..C")),
-                      ],
-                    ),
-                  ),
-                  SizedBox(
-                    width: 10,
-                  ),
-                ],
-              ),
-              SizedBox(height: 10
-                )
+                ),
+                SizedBox(height: 10),
     ]
-    )
+    ),
+          ),
     )
       )
     );
