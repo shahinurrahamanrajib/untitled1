@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
       body: TabBarView(
           children:<Widget>[
             Image.asset('assets/DSC_0013.JPG',),
-            Image.asset('assets/wcalls.jpg',),
+            Image.asset('assets/wchats.JPG',),
             Image.asset('assets/wstatus.jpg',),
             Image.asset('assets/wcalls.jpg',),
           
