@@ -9,192 +9,34 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        home : Scaffold(
-          appBar: AppBar(
-            leading: IconButton(icon: Icon(Icons.arrow_back),onPressed :(){
-              Navigator.push(context, MaterialPageRoute(
-                  builder: (context)=>MyApps()));
-            } ),
-            actions: <Widget>[
-              IconButton(icon: Icon(Icons.mic_none_rounded),onPressed :(){} ),
-              IconButton(icon: Icon(Icons.add_ic_call_outlined),onPressed :(){
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>CallScreen()));
-              } ),
-            ],
-            title: Center(
-              child: Text("Search contact & places",style: TextStyle(
-                fontSize: 15,
-              ),),
-            ),
-          ),
-          body: ListView(
-
-            children: const <Widget>[
-              ListTile(
-                title: Text("F Cc Arafat ",),
-                subtitle: Text("01571763837\nTeletalk"),
-                leading: Icon(Icons.account_circle,size: 50,),
-                trailing: Icon(Icons.call_outlined,size: 25),
-
-              ),
-              ListTile(
-                title: Text("F Cc Sakib"),
-                subtitle: Text("01521402173\nTeletalk"),
-                leading: Icon(Icons.account_circle,size: 50,),
-                trailing: Icon(Icons.call_outlined,size: 25),
-
-              ),  ListTile(
-                title: Text("F Cc Atano ",),
-                subtitle: Text("01626397315\nAirtel"),
-                leading: Icon(Icons.account_circle,size: 50,),
-                trailing: Icon(Icons.call_outlined,size: 25),
-
-              ),
-              ListTile(
-                title: Text("Ahad "),
-                subtitle: Text("01833932841\nRobi"),
-                leading: Icon(Icons.account_circle,size: 50,),
-                trailing: Icon(Icons.call_outlined,size: 25),
-
-              ),  ListTile(
-                title: Text("Rajib ",),
-                subtitle: Text("01872108085\nRobi"),
-                leading: Icon(Icons.account_circle,size: 50,),
-                trailing: Icon(Icons.call_outlined,size: 25),
-
-              ),
-              ListTile(
-                title: Text("Azim Mama"),
-                subtitle: Text("01872108085\nRobi"),
-                leading: Icon(Icons.account_circle,size: 50,),
-                trailing: Icon(Icons.call_outlined,size: 25),
-
-              ),
-              ListTile(
-                title: Text("Hakim Mama ",),
-                subtitle: Text("01872108085\nRobi"),
-                leading: Icon(Icons.account_circle,size: 50,),
-                trailing: Icon(Icons.call_outlined,size: 25),
-
-              ),
-              ListTile(
-                title: Text("Atik Ullah GT"),
-                subtitle: Text("01643196994\nRobi"),
-                leading: Icon(Icons.account_circle,size: 50,),
-                trailing: Icon(Icons.call_outlined,size: 25),
-
-              ),  ListTile(
-                title: Text("Rajib ",),
-                subtitle: Text("01872108085\nRobi"),
-                leading: Icon(Icons.account_circle,size: 50,),
-                trailing: Icon(Icons.call_outlined,size: 25),
-
-              ),
-              ListTile(
-                title: Text("Rajib"),
-                subtitle: Text("01872108085\nRobi"),
-                leading: Icon(Icons.account_circle,size: 50,),
-                trailing: Icon(Icons.call_outlined,size: 25),
-
-              ),  ListTile(
-                title: Text("Rajib ",),
-                subtitle: Text("01872108085\nRobi"),
-                leading: Icon(Icons.account_circle,size: 50,),
-                trailing: Icon(Icons.call_outlined,size: 25),
-
-              ),
-              ListTile(
-                title: Text("Rajib"),
-                subtitle: Text("01872108085\nRobi"),
-                leading: Icon(Icons.account_circle,size: 50,),
-                trailing: Icon(Icons.call_outlined,size: 25),
-
-              ),
-              ListTile(
-                title: Text("Rajib ",),
-                subtitle: Text("01872108085\nRobi"),
-                leading: Icon(Icons.account_circle,size: 50,),
-                trailing: Icon(Icons.call_outlined,size: 25),
-
-              ),
-              ListTile(
-                title: Text("Rajib"),
-                subtitle: Text("01872108085\nRobi"),
-                leading: Icon(Icons.account_circle,size: 50,),
-                trailing: Icon(Icons.call_outlined,size: 25),
-
-              ),  ListTile(
-                title: Text("Rajib ",),
-                subtitle: Text("01872108085\nRobi"),
-                leading: Icon(Icons.account_circle,size: 50,),
-                trailing: Icon(Icons.call_outlined,size: 25),
-
-              ),
-              ListTile(
-                title: Text("Rajib"),
-                subtitle: Text("01872108085\nRobi"),
-                leading: Icon(Icons.account_circle,size: 50,),
-                trailing: Icon(Icons.call_outlined,size: 25),
-
-              ),  ListTile(
-                title: Text("Rajib ",),
-                subtitle: Text("01872108085\nRobi"),
-                leading: Icon(Icons.account_circle,size: 50,),
-                trailing: Icon(Icons.call_outlined,size: 25),
-
-              ),
-              ListTile(
-                title: Text("Rajib"),
-                subtitle: Text("01872108085\nRobi"),
-                leading: Icon(Icons.account_circle,size: 50,),
-                trailing: Icon(Icons.call_outlined,size: 25),
-
-              ),
-              ListTile(
-                title: Text("Rajib ",),
-                subtitle: Text("01872108085\nRobi"),
-                leading: Icon(Icons.account_circle,size: 50,),
-                trailing: Icon(Icons.call_outlined,size: 25),
-
-              ),
-              ListTile(
-                title: Text("Rajib"),
-                subtitle: Text("01872108085\nRobi"),
-                leading: Icon(Icons.account_circle,size: 50,),
-                trailing: Icon(Icons.call_outlined,size: 25),
-
-              ),  ListTile(
-                title: Text("Rajib ",),
-                subtitle: Text("01872108085\nRobi"),
-                leading: Icon(Icons.account_circle,size: 50,),
-                trailing: Icon(Icons.call_outlined,size: 25),
-
-              ),
-              ListTile(
-                title: Text("Rajib"),
-                subtitle: Text("01872108085\nRobi"),
-                leading: Icon(Icons.account_circle,size: 50,),
-                trailing: Icon(Icons.call_outlined,size: 25),
-
-              ),  ListTile(
-                title: Text("Rajib ",),
-                subtitle: Text("01872108085\nRobi"),
-                leading: Icon(Icons.account_circle,size: 50,),
-                trailing: Icon(Icons.call_outlined,size: 25),
-
-              ),
-              ListTile(
-                title: Text("Rajib"),
-                subtitle: Text("01872108085\nRobi"),
-                leading: Icon(Icons.account_circle,size: 50,),
-                trailing: Icon(Icons.call_outlined,size: 25),
-
-              ),
-            ],
-          ),
-        )
-    );
+    return DefaultTabController(
+      length: 4,
+    child: Scaffold(
+      appBar: AppBar(
+        bottom: TabBar(
+            tabs: <Widget>[
+              Tab(icon: Icon(Icons.photo_camera),),
+              Tab(text: 'CHATS'),
+              Tab(text: 'STATUS'),
+              Tab(text: 'CALLS'),
+            ] ,
+        ),
+        title: Text('WhatsApp'),
+        backgroundColor: Colors.teal,
+        actions: <Widget>[
+          Icon(Icons.search),
+          SizedBox(width: 20,),
+          Icon(Icons.more_vert),
+        ],
+      ),
+      body: TabBarView(
+          children:<Widget>[
+            Image.asset('assets/DSC_0013.JPG',),
+            Image.asset('assets/wcalls.jpg',),
+            Image.asset('assets/wstatus.jpg',),
+            Image.asset('assets/wcalls.jpg',),
+          
+          ]),
+    ),);
   }
 }
