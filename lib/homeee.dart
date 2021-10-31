@@ -39,6 +39,9 @@ class _HomeState extends State<Home> {
               UserAccountsDrawerHeader(
                 accountName: Text("শহিীনুর রহমান রাজীব"),
                 accountEmail: Text("০১৮৭২১০৮০৮৫"),
+                currentAccountPicture: CircleAvatar(
+                  child: Icon(Icons.person,size: 60,)
+                ),
               ),
               ListTile(
                 onTap: () {

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:untitled1/Call/botom.dart';
 import 'package:untitled1/Splashhh.dart';
 import 'package:untitled1/callscreen.dart';
 
@@ -12,7 +13,8 @@ class Myapp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-     home: splashscreen(),
+     home: //splashscreen(),
+      Botombar()
       //home: CallScreen(),
     );
   }
