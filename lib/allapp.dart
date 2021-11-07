@@ -67,7 +67,9 @@ class MyApps extends StatelessWidget {
 
             ),
             Card(
-              child: IconButton(icon: Icon(Icons.camera_alt_rounded,size: 50,),onPressed: (){},),
+              child: IconButton(icon: Icon(Icons.camera_alt_rounded,size: 50,),onPressed: (){
+                showModalBottomSheet(context: context, builder: (context){return})
+              },),
               elevation: 10,
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.all(Radius.circular(20.0))
